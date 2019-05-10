@@ -15,4 +15,12 @@ object SlickExample extends App {
 
     override def * : ProvenShape[RandomExample] = (id, field1, field2).mapTo[RandomExample]
   }
+
+  class RandomExampleRepository(tag: Tag) extends RandomExampleTable(tag) {
+    def table: TableQuery[RandomExampleTable] = TableQuery[RandomExampleTable]
+
+   // def all = table.sorted
+  }
+
+  val db = Database.forConfig("chapter01")
 }
