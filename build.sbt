@@ -10,7 +10,8 @@ libraryDependencies ++= Seq(
   "org.typelevel"              %% "cats-core"              % "1.6.0",
   "com.typesafe.slick"         %% "slick"                  % "3.3.0",
   "com.github.alexarchambault" %% "argonaut-shapeless_6.2" % "1.2.0-M4",
-  "com.beachape"               %% "enumeratum"             % "1.5.13"
+  "com.beachape"               %% "enumeratum"             % "1.5.13",
+  "com.olegpy"                 %% "meow-mtl"               % "0.2.0"
 )
 
 resolvers += Resolver.sonatypeRepo("releases")
