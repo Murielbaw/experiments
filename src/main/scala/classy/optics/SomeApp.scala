@@ -18,8 +18,5 @@ object SomeApp extends App {
   val r = someFunction[IO]()
     .unsafeToFuture()
 
-  r.recover({case e => println(e); 3}).map(println)
-
-
   Thread.sleep(1000000)
 }
