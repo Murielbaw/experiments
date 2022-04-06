@@ -1,14 +1,12 @@
-
- 
-
+import sys
 import tkinter as tk
 
 def compound_interest():
     """calculate principle+interest.
     """
     principle = ent_principle.get()
-    final_result = float(principle) * (pow((1 + 20 / 100), 5))
-    lbl_result["text"] = f"{round(final_result, 2)} £"
+    final_result = float(principle) * (pow((1 + 20 / 100), -5))
+    lbl_result["text"] = f"{round(final_result, 2)} lei"
 
 window = tk.Tk()
 window.title("How much you owe me")
